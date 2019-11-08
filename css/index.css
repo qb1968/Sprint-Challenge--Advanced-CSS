@@ -210,16 +210,15 @@ footer {
 }
 .home .space-images {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 10px;
   width: 100%;
 }
 @media (max-width: 500px) {
   .home .space-images .sky,
   .home .space-images .launch {
     display: none;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
   }
   .home .space-images img {
     width: 28%;
@@ -252,8 +251,8 @@ footer {
 @media (max-width: 500px) {
   .home .walk {
     display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
+    flex-wrap: wrap-reverse;
+    padding: 5px;
     width: 100%;
   }
 }
@@ -264,7 +263,6 @@ footer {
   .home .walk .walk-text {
     width: 100%;
     padding: 20px;
-    margin: auto;
   }
 }
 .home .walk .walk-text h3 {
@@ -293,7 +291,8 @@ footer {
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
     width: 100%;
-    justify-content: center;
+    align-items: center;
+    margin: auto;
   }
 }
 .home .walk .walk-img {
@@ -303,7 +302,7 @@ footer {
 @media (max-width: 500px) {
   .home .walk .walk-img {
     display: flex;
-    width: 75%;
+    width: 100%;
     justify-content: center;
     align-items: center;
   }
