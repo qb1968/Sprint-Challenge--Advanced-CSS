@@ -1,1 +1,25 @@
 // Mixins Here
+// .dash-one{
+//     border-bottom: 2px dashed @silver;
+// }
+.my-one{
+    display: flex;
+}
+.custom-btn(@bg-color:@btn-bg-color, @size: 200px, @font-color:@wild-sand){
+    display: block;
+    background-color: @bg-color;
+     margin: 0 10px 20px;
+     cursor: pointer;
+     width: @size;
+    height: 40px;
+     font-size: 3rem;
+     border-radius: 10px;
+      text-align: center;
+     justify-content: center;
+    color:@font-color;
+
+    &:hover{
+        background-color:@font-color;
+        color:@bg-color;
+      }
+ }
