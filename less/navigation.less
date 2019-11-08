@@ -1,1 +1,35 @@
 // Navigation code here
+.navigation{
+     .my-one();
+     flex-direction: column;
+     justify-content: space-between;
+     
+     align-items:center;
+     padding:2px;
+     height:80px; 
+     @nav-font: @river-bend; 
+     background: @wild-sand;
+     @nav-border: @sea-shell;
+     h1{
+    font-size:45px;
+   
+}   
+}
+nav{
+    .my-one();
+        // line-height:35px;
+        font-size:15px;
+        
+        justify-content: space-evenly;
+        width:25%;
+        @media @phone{
+            display: flex;
+               width: 100%;
+               text-align: center;
+               justify-content: space-evenly;
+        }
+}
+  a{
+      color: @river-bend;
+     
+}
